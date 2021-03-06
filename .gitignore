@@ -1,1 +1,5 @@
+# Auto Generated files
 node_modules/
+
+# build files
+dist-server/

@@ -1,10 +1,10 @@
 // routes/index.js and users.js
 import express from "express";
-var router = express.Router();
+import { addUser } from "../../controllers/userController";
 
-/* GET users listing. */
-router.get("/", function (req, res, next) {
-  res.send("respond with a resource");
-});
+const router = express.Router();
+
+/* Add a new user */
+router.post("/user", addUser);
 
 export default router;
